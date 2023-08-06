@@ -20,5 +20,6 @@ setup(
         'six==1.16.0',
         'tzdata==2023.3',
         'urllib3==2.0.4',
+        'persiantools==3.0.1',
     ]
 )
