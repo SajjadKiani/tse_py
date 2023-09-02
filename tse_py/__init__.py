@@ -67,6 +67,9 @@ def __Get_TSE_WebID__(stock):
     print('Please Enetr a Valid Ticker or Name!')
     return False
 
+def get_stock_code(stock_name: str):
+    return __Get_TSE_WebID__(stock_name)['WEB-ID'][0]
+
 def buy_sell_history(stock_name: str):
     stock_code = __Get_TSE_WebID__(stock_name)['WEB-ID'][0]
     if (type(stock_code) == bool):
